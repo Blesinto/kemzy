@@ -2,7 +2,7 @@ import { navLinks } from '../constraint';
 
 const Navbar = () => {
   return (
-    <div className='ps-[5rem] pe-[5rem]'>
+    <div className='ps-[5rem] pe-[5rem] x:pe-[2rem] x:ps-[2rem]'>
       <nav className=' w-full mt-4 flex justify-between items-center'>
         {/* logo  */}
         <div>
@@ -10,9 +10,9 @@ const Navbar = () => {
         </div>
         {/* navlinks  */}
         <div>
-          <ul className='flex'>
+          <ul className='flex '>
             {navLinks.map((nav, index) => (
-              <li key={nav.id} className='p-4'>
+              <li key={nav.id} className='p-4 x:hidden'>
                 <a href={`#${nav.id}`}>{nav.title}</a>
               </li>
             ))}
