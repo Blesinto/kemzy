@@ -21,7 +21,7 @@ const Navbar = () => {
 
         {/* hire me  */}
         <div>
-          <button className='bg-[#5E3BEE] ps-4 pe-4 py-2 text-white rounded-lg text-[12px]'>
+          <button className='bg-[#5E3BEE]  hover:bg-white hover:text-[#5E3BEE]  ps-4 pe-4 py-2 text-white rounded-lg text-[12px]'>
             Hire me
           </button>
         </div>
