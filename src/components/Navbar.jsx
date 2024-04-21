@@ -2,8 +2,8 @@ import { navLinks } from '../constraint';
 
 const Navbar = () => {
   return (
-    <div className='container'>
-      <nav className='flex justify-between items-center'>
+    <div className='ps-[5rem] pe-[5rem]'>
+      <nav className=' w-full mt-4 flex justify-between items-center'>
         {/* logo  */}
         <div>
           <h1>Kemzy</h1>
@@ -21,7 +21,9 @@ const Navbar = () => {
 
         {/* hire me  */}
         <div>
-            <button>Hire me</button>
+          <button className='bg-[#5E3BEE] ps-4 pe-4 py-2 text-white rounded-lg text-[12px]'>
+            Hire me
+          </button>
         </div>
       </nav>
     </div>
