@@ -8,10 +8,10 @@ const Hero = () => (
     <div className='flex flex-col x:text-center x:mb-[3rem]'>
       <div>
         <h5>Hi I am</h5>
-        <h2 className='text-3xl mt-2'>
+        <h2 className='text-3xl'>
           Ekemini <span className='text-[#5E3BEE]'>Udongwo</span>
         </h2>
-        <h1 className='mt-2'>Backend Developer</h1>
+        <h1 className=''>Backend Developer</h1>
       </div>
       {/* icons  */}
       <div className='flex items-center x:justify-center  mt-4'>
@@ -27,7 +27,7 @@ const Hero = () => (
         </a>
       </div>
 
-      <div className='flex mt-[3rem]'>
+      <div className='flex x:justify-center x:items-center mt-[1rem]'>
         <div className=''>
           <button className='bg-[#5E3BEE] hover:bg-white hover:text-[#5E3BEE] ps-4 pe-4 py-2 text-white rounded-lg text-[12px]'>
             Hire me
@@ -38,6 +38,21 @@ const Hero = () => (
           <button className='bg-[#5E3BEE] hover:bg-white hover:text-[#5E3BEE]  ps-4 pe-4 py-2 text-white rounded-lg text-[12px]'>
             Download cv
           </button>
+        </div>
+      </div>
+      {/* experience  */}
+      <div className='flex mt-4 text-[13px]'>
+        <div className='mr-4'>
+          <h3 className='text-[#5E3BEE]'>5+</h3>
+          <h5>experience</h5>
+        </div>
+        <div>
+          <h3 className='text-[#5E3BEE]'>20+</h3>
+          <h5>Project done</h5>
+        </div>
+        <div className='ml-4'>
+          <h3 className='text-[#5E3BEE]'>80+</h3>
+          <h5>Happy clients</h5>
         </div>
       </div>
     </div>
