@@ -13,8 +13,8 @@ const About = () => (
     </div>
     {/* content  */}
     <div className='flex justify-between x:flex-col mt-[5rem] x:m-auto x:pr-0 x:text-center x:justify-center items-center'>
-      <div className='x:max-w-[70%] x:mt-[5rem]'>
-        <img src={about_img} alt='about_img' className='w-[355px] x:w-[250px]' />
+      <div className='x:max-w-[70%] x:mt-[5rem] relative overflow-hidden'>
+        <img src={about_img} alt='about_img' className='w-[355px] x:w-[250px] animate-float' />
       </div>
       <div className='w-[350px] x:w-[300px] x:text-[13px] x:mt-[5rem]'>
         <p>

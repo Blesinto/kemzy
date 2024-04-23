@@ -41,8 +41,8 @@ const Hero = () => (
         </div>
       </div>
       {/* experience  */}
-      <div className='flex mt-4 text-[13px]'>
-        <div className='mr-4'>
+      <div className='flex mt-6 text-[13px] text-center'>
+        <div className='mr-4 '>
           <h3 className='text-[#5E3BEE]'>5+</h3>
           <h5>experience</h5>
         </div>
@@ -57,8 +57,8 @@ const Hero = () => (
       </div>
     </div>
     {/* image  */}
-    <div>
-      <img src={hero_img} alt='hero_image' className='w-[355px] x:w-[250px]' />
+    <div className="relative overflow-hidden">
+      <img src={hero_img} alt='hero_image' className='w-[355px] x:w-[250px] animate-float' />
     </div>
   </div>
 );
