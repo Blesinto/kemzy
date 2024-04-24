@@ -21,3 +21,16 @@ body{
 .animate-float {
   animation: float 2s ease-in-out infinite;
 }
+
+.skew-container {
+  overflow: hidden;
+}
+
+.skewed-image {
+  transition: transform 0.3s ease-in-out;
+  transform: skew(-10deg);
+}
+
+.skewed-image:hover {
+  transform: skew(0deg);
+}

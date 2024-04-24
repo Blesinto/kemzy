@@ -20,7 +20,7 @@ const Services = () => (
         {service.map(({ id, title, desc }) => (
           <div
             key={id}
-            className=' bg-[#FFFFFF] transition-colors hover:bg-white hover:text-[#5E3BEE] cur bg-opacity-[4%] p-4 m-2 flex-col item-center justify-center rounded-[20px]  '
+            className=' bg-[#FFFFFF] transition-colors hover:bg-white hover:text-[#5E3BEE]  bg-opacity-[4%] p-4 m-2 flex-col item-center justify-center rounded-[20px]  '
           >
             <div>
               <SiPython className='text-[2rem] m-auto mt-4   ' />
