@@ -3,13 +3,14 @@ import { ImWhatsapp } from 'react-icons/im';
 import { IoLogoInstagram } from 'react-icons/io5';
 import { MdOutlineEmail } from 'react-icons/md';
 import { VscCallIncoming } from 'react-icons/vsc';
+import logo from "../assets/kemzy_logo.png"
 
 const Footer = () => (
   <div className='ps-[5rem] pe-[5rem] x:pe-[2rem] x:ps-[2rem] mt-[5rem]'>
     <footer className='grid-rows-5 grid items-center text-center justify-center '>
-      <div>
-        <a href='#'>logo</a>
-      </div>
+    <div className='flex items-center justify-center mb-4'>
+         <img src={logo} alt="" className='w-[80px]' />
+        </div>
       <div>
         <ul className='text-[#7B7583] text-[14px]  flex'>
           <li>

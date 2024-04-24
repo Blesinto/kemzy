@@ -1,4 +1,12 @@
 import about_img from '../assets/about.png';
+import resume from '../assets/Resume.pdf';
+
+const cv = () => {
+  const link = document.createElement('a');
+  link.href = resume;
+  link.download = 'resume.pdf'; 
+  link.click();
+};
 
 const About = () => (
   <div className='ps-[5rem] pe-[5rem] x:pe-[2rem] x:ps-[2rem] mt-[5rem] x:mt-[5rem]'>
@@ -28,7 +36,8 @@ const About = () => (
         !
         </p>
         <div className='mt-6'>
-          <button className='bg-[#5E3BEE] hover:bg-white hover:text-[#5E3BEE]  ps-4 pe-4 py-2 text-white rounded-lg text-[12px]'>
+          <button className='bg-[#5E3BEE] hover:bg-white hover:text-[#5E3BEE]  ps-4 pe-4 py-2 text-white rounded-lg text-[12px]'
+            onClick={cv}>
             Download cv
           </button>
         </div>
