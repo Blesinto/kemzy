@@ -12,7 +12,7 @@ const Footer = () => (
          <img src={logo} alt="" className='w-[80px]' />
         </div>
       <div>
-        <ul className='text-[#7B7583] text-[14px]  flex'>
+        <ul className='text-[#7B7583] text-[14px] x:text-[13px] flex'>
           <li>
             <a href='#'>Home</a>
           </li>
@@ -48,11 +48,11 @@ const Footer = () => (
         </a>
       </div>
       <div className='text-[13px] grid grid-rows-1'>
-        <div  className='flex items-center'>
+        <div  className='flex items-center x:flex-col'>
           <MdOutlineEmail />
-          <a href='#' className='ml-2 mr-2'>Mahmood.fazile7005@gmail.com</a>
+          <a href='#' className='ml-2 mr-2 x:mb-2'>Mahmood.fazile7005@gmail.com</a>
           <VscCallIncoming/>
-          <span  className='ml-2' >+234 8029675272</span>
+          <span  className='ml-2 ' >+234 8029675272</span>
         </div>
       </div>
       <hr />

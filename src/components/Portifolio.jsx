@@ -34,7 +34,7 @@ const Portfolio = () => {
   };
 
   return (
-    <div className='ps-[5rem] pe-[5rem] x:pe-[2rem] x:ps-[2rem] mt-[5rem]'>
+    <div className='ps-[5rem] pe-[5rem] x:pe-[2rem] x:ps-[2rem] mt-[10rem]'>
       <div className=' flex justify-between items-center'>
         <div>
           <h6 className='text-[12px]'>Recent Projects</h6>
