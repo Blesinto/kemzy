@@ -1,4 +1,5 @@
 import { navLinks } from '../constraint';
+import logo from "../assets/kemzy_logo.png"
 
 const Navbar = () => {
   return (
@@ -6,7 +7,7 @@ const Navbar = () => {
       <nav className='w-full mt-4 flex justify-between items-center'>
         {/* logo  */}
         <div>
-          <h1>Kemzy</h1>
+         <img src={logo} alt="" className='w-[80px]' />
         </div>
         {/* navlinks  */}
         <div>

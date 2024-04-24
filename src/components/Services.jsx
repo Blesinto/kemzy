@@ -16,7 +16,7 @@ const Services = () => (
       </div>
 
       {/* service  */}
-      <div className='grid-cols-3 grid mt-8  x:grid-cols-1 '>
+      <div className='grid-cols-3 grid mt-[5rem]  x:grid-cols-1 '>
         {service.map(({ id, title, desc }) => (
           <div
             key={id}
