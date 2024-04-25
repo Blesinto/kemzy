@@ -27,7 +27,7 @@ const Carousel = () => {
     ],
   };
   return (
-    <div className='ps-[5rem] pe-[5rem] x:pe-[2rem] x:ps-[2rem] mt-[5rem] x:mt-[5rem]'>
+    <div className='ps-[10rem] pe-[10rem] x:pe-[2rem] x:ps-[2rem] mt-[5rem] x:mt-[5rem]'>
       <div>
         <h3>Clients Feedback</h3>
         <h1>Customer testimonials</h1>

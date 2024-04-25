@@ -18,7 +18,7 @@ const Hero = () => {
 
 
   return(
-  <div className='ps-[5rem] pe-[5rem] x:pe-[2rem] x:ps-[2rem] x:flex-col justify-between items-center flex mt-[5rem] '>
+  <div className='ps-[10rem] pe-[10rem] x:pe-[2rem] x:ps-[2rem] x:flex-col justify-between items-center flex mt-[5rem] '>
     <div className='flex flex-col x:text-center x:mb-[3rem]'>
       <div>
         <h5>Hi I am</h5>
