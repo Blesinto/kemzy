@@ -2,7 +2,7 @@ import { service } from '../constraint';
 import { SiPython } from 'react-icons/si';
 
 const Services = () => (
-  <div className='ps-[10rem] pe-[10rem] x:pe-[2rem] x:ps-[2rem] mt-[5rem] x:mt-[5rem]'>
+  <div className='ps-[8rem] pe-[8rem]  x:pe-[2rem] x:ps-[2rem] mt-[5rem] x:mt-[5rem]'>
     <div className='flex flex-col justify-center items-center text-center'>
       <div className='mb-2'>
         {' '}

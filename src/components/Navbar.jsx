@@ -17,8 +17,8 @@ const Navbar = () => {
     window.location.href = 'https://wa.me/+2349038306057';
   };
   return (
-    <div className='ps-[10rem] pe-[10rem] x:pe-[2rem] x:ps-[2rem]'>
-      <nav className={`w-full mt-4 flex justify-between items-center ${Sticky?'fixed bg-[#121212] top-0 z-[1000] mt-0 py-2 justify-around left-0 ':''}`}>
+    <div className='ps-[8rem] pe-[8rem] x:pe-[2rem] x:ps-[2rem]'>
+      <nav className={`w-full  flex justify-between items-center ${Sticky?'fixed bg-[#121212] top-0 z-[1000]  py-2 justify-around left-0 ':''}`}>
         {/* logo  */}
         <div>
           <img src={logo} alt='' className='w-[80px]' />

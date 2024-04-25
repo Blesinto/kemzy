@@ -18,14 +18,14 @@ const Hero = () => {
 
 
   return(
-  <div className='ps-[10rem] pe-[10rem] x:pe-[2rem] x:ps-[2rem] x:flex-col justify-between items-center flex mt-[5rem] '>
+  <div className='ps-[8rem] pe-[8rem]  x:pe-[2rem] x:ps-[2rem] x:flex-col justify-between items-center flex mt-[5rem] '>
     <div className='flex flex-col x:text-center x:mb-[3rem]'>
       <div>
         <h5>Hi I am</h5>
         <h2 className='text-3xl'>
           Ekemini <span className='text-[#5E3BEE]'>Udongwo</span>
         </h2>
-        <h1 className=''>Backend Developer</h1>
+        <h1 className=''>Backend developer & DevOps Engineer</h1>
       </div>
       {/* icons  */}
       <div className='flex items-center x:justify-center  mt-4'>
@@ -61,7 +61,7 @@ const Hero = () => {
         </div>
       </div>
       {/* experience  */}
-      <div className='flex mt-6 text-[13px] text-center'>
+      <div className='flex mt-6 text-[14px] text-center'>
         <div className='mr-4 '>
           <h3 className='text-[#5E3BEE]'>5+</h3>
           <h5>experience</h5>

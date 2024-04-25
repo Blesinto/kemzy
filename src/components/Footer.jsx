@@ -12,7 +12,7 @@ const Footer = () => (
          <img src={logo} alt="" className='w-[80px]' />
         </div>
       <div>
-        <ul className='text-[#7B7583] text-[14px] x:text-[13px] flex'>
+        <ul className='text-[#7B7583] text-[14px] x:text-[10px] flex'>
           <li>
             <a href='#'>Home</a>
           </li>

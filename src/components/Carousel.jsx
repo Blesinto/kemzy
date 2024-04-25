@@ -27,14 +27,14 @@ const Carousel = () => {
     ],
   };
   return (
-    <div className='ps-[10rem] pe-[10rem] x:pe-[2rem] x:ps-[2rem] mt-[5rem] x:mt-[5rem]'>
+    <div className='ps-[8rem] pe-[8rem] x:pe-[2rem] x:ps-[2rem] mt-[5rem] x:mt-[5rem]'>
       <div>
         <h3>Clients Feedback</h3>
         <h1>Customer testimonials</h1>
       </div>
       <div className='slider-container mt-[5rem]'>
         <Slider {...settings}>
-          <div className='border p-4 w-[300px] '>
+          <div className='border p-4 w-0 '>
             <div className='flex'>
               <HiOutlineStar />
               <HiOutlineStar />
@@ -55,7 +55,7 @@ const Carousel = () => {
             </div>
           </div>
           {/* second  */}
-          <div className='border p-4 w-[300px]'>
+          <div className='border p-4 mr-4 w-[300px]'>
             <div className='flex'>
               <HiOutlineStar />
               <HiOutlineStar />
@@ -67,7 +67,7 @@ const Carousel = () => {
             {/* author */}
             <div className='flex items-center mt-4'>
               <div>
-                <img src={ava1} alt='' className='w-[30px]' />
+                <img src={ava2} alt='' className='w-[30px]' />
               </div>
               <div className='text-[11px] ml-4'>
                 <h1>Dianne Russell</h1>
@@ -88,7 +88,7 @@ const Carousel = () => {
             {/* author */}
             <div className='flex items-center mt-4'>
               <div>
-                <img src={ava1} alt='' className='w-[30px]' />
+                <img src={ava3} alt='' className='w-[30px]' />
               </div>
               <div className='text-[11px] ml-4'>
                 <h1>Dianne Russell</h1>
