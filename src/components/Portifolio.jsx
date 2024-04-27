@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { SiGithub } from 'react-icons/si';
-import { GoArrowRight } from "react-icons/go";
+import { GoArrowRight } from 'react-icons/go';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import prof1 from '../assets/img_1.png';
 import prof2 from '../assets/img_2.png';
 import prof3 from '../assets/img_3.png';
@@ -27,6 +30,25 @@ const project = [
 ];
 
 const Portfolio = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 2,
+    autoplaySpeed: 3000,
+    autoplay: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const github = () => {
@@ -48,12 +70,11 @@ const Portfolio = () => {
         </div>
       </div>
       {/* projects */}
-      <div className='flex items-center mt-[5rem] cursor-pointer x:flex-col '>
-        {project.map(({ id, img, title, descr }, index) => (
-          
+      <Slider {...settings}>
+        {project.map(({ img, title, descr }, index) => (
           <div
-            key={id}
-            className='bg-opacity-[4%] bg-[#FFFFFF] m-2 p-4 rounded-lg'
+            key={index}
+            className='bg-opacity-[4%] bg-[#FFFFFF] m-2 p-4 rounded-lg slider-container'
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
             style={{
@@ -66,18 +87,20 @@ const Portfolio = () => {
             <p className='w-[75%] mb-4 text-[13px] mt-4'>{descr}</p>
             <div className='flex justify-between items-center'>
               <div className='flex items-center'>
-                <a href='#' className='text-[13px]'>View code</a>
+                <a href='#' className='text-[13px]'>
+                  View code
+                </a>
                 <GoArrowRight />
               </div>
               <div>
                 <button className='bg-[#5E3BEE] hover:bg-white hover:text-[#5E3BEE] ps-4 pe-4 py-2 text-white rounded-lg text-[12px]'>
-              <a href="#">   Live Preview</a>
+                  <a href='#'>Live Preview</a>
                 </button>
               </div>
             </div>
           </div>
         ))}
-      </div>
+      </Slider>
     </div>
   );
 };
