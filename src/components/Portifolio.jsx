@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { SiGithub } from 'react-icons/si';
 import { GoArrowRight } from 'react-icons/go';
@@ -74,28 +75,30 @@ const Portfolio = () => {
         {project.map(({ img, title, descr }, index) => (
           <div
             key={index}
-            className='bg-opacity-[4%] bg-[#FFFFFF] m-2 p-4 rounded-lg slider-container'
+            className='slider-container'
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
-            style={{
-              transform: hoveredIndex === index ? 'scale(1.1)' : 'none',
-              transition: 'transform 0.3s ease-in-out',
-            }}
           >
-            <img src={img} alt={title} className='w-[320px]' />
-            <h3 className='mt-4'>{title}</h3>
-            <p className='w-[75%] mb-4 text-[13px] mt-4'>{descr}</p>
-            <div className='flex justify-between items-center'>
-              <div className='flex items-center'>
-                <a href='#' className='text-[13px]'>
-                  View code
-                </a>
-                <GoArrowRight />
-              </div>
-              <div>
-                <button className='bg-[#5E3BEE] hover:bg-white hover:text-[#5E3BEE] ps-4 pe-4 py-2 text-white rounded-lg text-[12px]'>
-                  <a href='#'>Live Preview</a>
-                </button>
+            <div
+              className={`bg-opacity-[4%] bg-[#FFFFFF] m-2 p-4 rounded-lg ${
+                hoveredIndex === index ? 'transform scale-110' : ''
+              } transition-transform duration-300 ease-in-out`}
+            >
+              <img src={img} alt={title} className='w-[320px]' />
+              <h3 className='mt-4'>{title}</h3>
+              <p className='w-[75%] mb-4 text-[13px] mt-4'>{descr}</p>
+              <div className='flex justify-between items-center'>
+                <div className='flex items-center'>
+                  <a href='#' className='text-[13px]'>
+                    View code
+                  </a>
+                  <GoArrowRight />
+                </div>
+                <div>
+                  <button className='bg-[#5E3BEE] hover:bg-white hover:text-[#5E3BEE] ps-4 pe-4 py-2 text-white rounded-lg text-[12px]'>
+                    <a href='#'>Live Preview</a>
+                  </button>
+                </div>
               </div>
             </div>
           </div>

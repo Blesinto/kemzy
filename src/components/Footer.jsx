@@ -35,7 +35,7 @@ const Footer = () => (
         </ul>
       </div>
       {/* icons  */}
-      <div className='flex items-center justify-center'>
+      <div className='flex items-center justify-center x:justify-center  mt-4'>
         <a href='#'>
           <IoLogoInstagram />
         </a>

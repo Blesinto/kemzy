@@ -34,7 +34,7 @@ const Carousel = () => {
       </div>
       <div className='slider-container mt-[5rem]'>
         <Slider {...settings}>
-          <div className='border p-4 w-0 '>
+          <div className=' p-4 mr-4 w-0 '>
             <div className='flex'>
               <HiOutlineStar />
               <HiOutlineStar />
@@ -55,7 +55,7 @@ const Carousel = () => {
             </div>
           </div>
           {/* second  */}
-          <div className='border p-4 mr-4 w-[300px]'>
+          <div className=' p-4 mr-4 w-[300px]'>
             <div className='flex'>
               <HiOutlineStar />
               <HiOutlineStar />
@@ -76,7 +76,7 @@ const Carousel = () => {
             </div>
           </div>
           {/* third  */}
-          <div className='border p-4 w-[300px]'>
+          <div className=' p-4 scroll-mr-48 w-[300px]'>
             <div className='flex'>
               <HiOutlineStar />
               <HiOutlineStar />
@@ -97,7 +97,7 @@ const Carousel = () => {
             </div>
           </div>
           {/* four */}
-          <div className='border p-4 '>
+          <div className='  mr-4 p-4 '>
             <div className='flex'>
               <HiOutlineStar />
               <HiOutlineStar />
@@ -118,7 +118,7 @@ const Carousel = () => {
             </div>
           </div>
           {/* five  */}
-          <div className='border p-4 '>
+          <div className=' mr-4 p-4 '>
             <div className='flex'>
               <HiOutlineStar />
               <HiOutlineStar />
@@ -139,7 +139,7 @@ const Carousel = () => {
             </div>
           </div>
           {/* six  */}
-          <div className='border p-4'>
+          <div className=' mr-4 p-4'>
             <div className='flex'>
               <HiOutlineStar />
               <HiOutlineStar />
